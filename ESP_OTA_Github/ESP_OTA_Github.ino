@@ -11,8 +11,8 @@ const char * password = "alohomora";
 String FirmwareVer = {
   "2.2"
 };
-#define URL_fw_Version "https://raw.githubusercontent.com/programmer131/ESP8266_ESP32_SelfUpdate/master/esp32_ota/bin_version.txt"
-#define URL_fw_Bin "https://raw.githubusercontent.com/programmer131/ESP8266_ESP32_SelfUpdate/master/esp32_ota/fw.bin"
+#define URL_fw_Version "https://github.com/iamlalitahuja/ESP_OTA/blob/main/ESP_OTA_Github/bin_version.txt"
+#define URL_fw_Bin "https://github.com/iamlalitahuja/ESP_OTA/blob/main/ESP_OTA_Github/fw.bin"
 
 void connect_wifi();
 void firmwareUpdate();
