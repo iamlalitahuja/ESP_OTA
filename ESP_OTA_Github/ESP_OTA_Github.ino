@@ -7,9 +7,9 @@
 const char * ssid = "lalit";
 const char * password = "alohomora";
 
-
+#define LED_BUILTIN 2
 String FirmwareVer = {
-  "2.2"
+  "2.3"
 };
 #define URL_fw_Version "https://github.com/iamlalitahuja/ESP_OTA/blob/main/ESP_OTA_Github/bin_version.txt"
 #define URL_fw_Bin "https://github.com/iamlalitahuja/ESP_OTA/blob/main/ESP_OTA_Github/fw.bin"
@@ -35,7 +35,8 @@ void repeatedCall() {
   if ((currentMillis - previousMillis_2) >= mini_interval) {
     previousMillis_2 = currentMillis;
     Serial.print("idle loop...");
-    Serial.print(num++);
+    num+=2;
+    Serial.print(num);
     Serial.print(" Active fw version:");
     Serial.println(FirmwareVer);
    if(WiFi.status() == WL_CONNECTED) 
